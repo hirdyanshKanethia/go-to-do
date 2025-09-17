@@ -3,15 +3,16 @@ package task
 import "fmt"
 
 type Task struct {
-	ID    int
-	Title string
-	Done  bool
+	ID          int
+	Title       string
+	Description string
+	Done        bool
 }
 
 func (t Task) Print() {
-	status := "X"
+	status := "❌"
 	if t.Done {
-		status = "*"
+		status = "✅"
 	}
-	fmt.Printf("[%s] %d: %s\n", status, t.ID, t.Title)
+	fmt.Printf("[%s] %d: %s - %s\n", status, t.ID, t.Title, t.Description)
 }
