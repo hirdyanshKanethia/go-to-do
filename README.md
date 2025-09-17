@@ -3,8 +3,6 @@
 Go-To-Do is simple CLI notes/task-manager application built with Go.  
 Supports adding, editing, listing tasks, and undo/redo functionality implemented using stacks.
 
----
-
 ## Getting Started
 
 Follow these steps to set up and run the project locally:
@@ -24,7 +22,6 @@ go run main.go
 go build -o main
 ./main
 ```
----
 
 ## Usage 
 
